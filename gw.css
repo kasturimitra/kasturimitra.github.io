@@ -3,8 +3,8 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
+    background: #fff;
 }
 
 .panel {
@@ -22,6 +22,7 @@ body {
 
 #right-panel {
     right: 0;
+    overflow: hidden;
 }
 
 .panel .content {
@@ -56,6 +57,39 @@ body {
     text-decoration: none;
     color: #222;
     line-height: 2;
+}
+
+.panel .link a:hover {
+    color: #888;
+}
+
+#right-panel .content {
+    /* margin: 0rem 1rem; */
+    /* background: #fafafa; */
+    /* padding: 3rem 4rem; */
+    /* text-align: center; */
+}
+
+.rect {
+    position: absolute;
+    background: #f8f8f8;
+    width: 50%;
+    height: 100vh;
+}
+
+.rect-A {
+    /* top: 50%; */
+    /* left: -30%; */
+    /* transform: skewX(-45deg); */
+}
+
+.rect-B {
+    left: 50%;
+    width: 25%;
+    background: #fcfcfc;
+    /* top: -50%; */
+    /* left: 70%; */
+    /* transform: skewX(-45deg); */
 }
 
 @media (max-width: 800px) {
