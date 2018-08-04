@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Catamaran|Lato:300');
 
 body {
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -39,9 +41,36 @@ body {
 
 .panel .description {
     color: #555555;
-    font-size: 2rem;
-    margin-top: 2rem;
+    font-size: 1.75rem;
+    margin-top: 1.75rem;
     font-family: "Lato", sans-serif;
     font-weight: 300;
     line-height: 1.25;
+}
+
+.panel .link {
+    font-size: 1.5rem;
+}
+
+.panel .link a {
+    text-decoration: none;
+    color: #222;
+    line-height: 2;
+}
+
+@media (max-width: 800px) {
+    body {
+        overflow: auto;
+    }
+    .panel {
+        height: auto;
+        width: 100%;
+        position: relative;
+    }
+    .panel .content {
+        top: 0;
+        margin: 0;
+        padding: 4rem 2rem;
+        transform: translateY(0);
+    }
 }
