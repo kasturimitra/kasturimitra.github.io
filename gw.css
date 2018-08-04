@@ -1,34 +1,47 @@
-body{
-	overflow-x: hidden;
-	overflow-y:hidden;
+@import url('https://fonts.googleapis.com/css?family=Catamaran|Lato:300');
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
-.panel{
-	height:100vh;
-	width:50vw;
-	position: absolute;
-	top: 0%;
+
+.panel {
+    height: 100vh;
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    font-family: "Catamaran", sans-serif;
 }
-#left{
-	left:0%;
-	background: #efefef;
+
+#left-panel {
+    left: 0;
+    background: #efefef;
 }
-#right{
-	right: 0%;
+
+#right-panel {
+    right: 0;
 }
-.panel .name{
-	top:15vh;
-	height: 30vh;
-	font-size: 11vh;
-	color: #151515;
-	position: absolute;
-	width:30vw;
-	left:7vw;
+
+.panel .content {
+    position: relative;
+    display: block;
+    margin: 0rem 4rem;
+    padding: 2rem 2rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
-.panel .description{
-	top:48vh;
-	font-size: 5vh;
-	color: #363636;
-	position: absolute;
-	width:30vw;
-	left:7vw;	
+
+.panel .name {
+    color: #151515;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.panel .description {
+    color: #555555;
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    line-height: 1.25;
 }
