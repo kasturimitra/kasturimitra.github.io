@@ -9,7 +9,6 @@ body {
 
 .panel {
     height: 100vh;
-    width: 50vw;
     position: absolute;
     top: 0;
     font-family: "Catamaran", sans-serif;
@@ -17,11 +16,13 @@ body {
 
 #left-panel {
     left: 0;
+    width: 50vw;
     background: #efefef;
 }
 
 #right-panel {
     right: 0;
+    width: 50vw;
     overflow: hidden;
 }
 
@@ -46,7 +47,7 @@ body {
     margin-top: 1.75rem;
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    line-height: 1.25;
+    line-height: 1.5;
 }
 
 .panel .link {
