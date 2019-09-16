@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Average+Sans|Average')
+
+$white: #fefefe
+$black: #333
+$primary: #924444
+$grey: #f2f2f2
+$blue: darken(#4183D7, 20%)
+
+::-moz-selection
+    background: $black
+    color: $white
+    text-shadow: none
+
+::selection
+    background: $black
+    color: $white
+    text-shadow: none
+
+.ave
+    font-family: "Average", serif
+
+.ave-sans
+    font-family: "Average Sans", sans-serif
+
+body
+    height: 100%
+    width: 100%
+    background: $white
+    font-family: "Average Sans", sans-serif
+
+h1, h2, h3, h4, h5, h6
+    font-family: "Average", serif
+
+a
+    color: $primary
+
+    &:hover
+        color: darken($primary, 5%)
+
+.container-main
+    margin-top: 8rem
+    margin-bottom: 6rem
+    line-height: 1.75
+
+    @media (max-width: 768px)
+        margin-top: 0
+
+    .logo
+        display: block
+        position: absolute
+        width: 4rem
+        height: 4rem
+        background: $primary
+        transform: translate(2rem, -2rem)
+        z-index: 99
+
+        .K
+            display: block
+            position: absolute
+            top: 50%
+            transform: translate(0%, -50%)
+            width: 100%
+            text-align: center
+            color: $white
+            font-size: 2rem
+
+        @media (max-width: 768px)
+            position: relative
+            width: 100%
+            height: 6rem
+            margin-bottom: 1rem
+            transform: translate(0, 0)
+
+    .blog-link
+        display: block
+        float: right
+        padding: 1rem 1.5rem
+        font-size: 1rem
+        // transform: translate(0rem, -3rem)
+        text-decoration: none
+        color: darken($grey, 15%)
+
+        &.transform
+            padding: 1rem 0
+            transform: translate(0rem, -3rem)
+
+        @media (max-width: 768px)
+            float: none
+            text-align: center
+            transform: translate(0, 0) !important
+
+    h1
+        position: relative
+        display: block
+        width: auto
+        background-image: url('http://themes.googleusercontent.com/image?id=0BwVBOzw_-hbMMGJkZjMwODktOGE0Yy00YTkwLWI3OWUtYmJlMzZiODhlMTZi&options=w1600')
+        background-position: center center
+        background-attachment: fixed
+        background-repeat: no-repeat
+        background-size: cover
+        text-align: center
+        padding: 15rem 20% 25rem 20%!important
+        margin-bottom: 2rem
+        color: white
+        line-height: 0.75
+        z-index: -1
+
+        @media (max-width: 768px)
+            padding: 12rem 1rem
+
+        &.index
+            padding: 4rem 20%
+
+            @media (max-width: 768px)
+                padding: 6rem 1rem
+
+        .subtitle
+            font-size: 1.5rem
+
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            background: rgba($primary, 0.2)
+            transition: all .3s linear
+
+    h2, h3, h4, h5, h6
+        margin-top: 2rem
+        margin-bottom: 1rem
+        font-weight: 900
+
+    p
+        margin: 0
+        margin-bottom: 0.75rem
+        font-size: 1.15rem
+        font-weight: 300
+
+    pre > code
+        display: block
+        position: relative
+        padding: 1rem
+        width: auto
+        background: #f8f8f8
+
+    pre.prettyprint
+        border: none !important
+
+    center
+        display: block
+        position: relative
+        width: 60%
+        left: 20%
+        @media (max-width: 768px)
+            width: 100%
+            left: 0
+
+    blockquote
+        margin: 1rem 0
+        padding: 0 2rem
+        text-align: center
+
+    .date
+        display: block
+        text-align: center
+        margin-bottom: 2rem
+        color: #777
+
+    img
+        margin: 1rem 0
+        width: 100%
+
+.container-main > p
+    text-align: justify
+
+.article-container
+    margin-top: -10rem
+    background: white
+    box-shadow: 0 0 80px 150px white
+
+    .article
+        display: block
+        text-decoration: none
+        text-align: center
+        margin-bottom: 2rem
+
+        .heading
+            font-size: 1.25rem
+            margin: 0
+            color: $black
+
+        .heading, .meta
+            transition: all 0.25s ease
+
+        &:hover
+            .heading
+                transform: translateY(0.75rem)
+            .meta
+                transform: translateY(-0.75rem)
+                opacity: 0
+
+pre
+    white-space: pre-wrap
+    word-wrap: break-word
+
+.container-footer
+    margin-bottom: 3rem
+    text-align: center
+    color: #777
+
+    span
+        display: inline-block
+        width: 75%
+        font-size: 0.9rem
+
+.videoWrapper
+    position: relative
+    margin: 1rem 0
+    padding-bottom: 40%
+    padding-top: 25px
+    height: 0
+    @media (max-width: 768px)
+        padding-bottom: 56.25%
+
+.videoWrapper iframe
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    width: 100%
+    height: 100%
+
+.year
+    text-align: center
+    padding-bottom: 1rem
+    font-size: 1.1rem
+    color: #333
+    &::after
+        content: ''
+        display: block
+        position: relative
+        top: 0
+        width: 100%
+        height: 1px
+        background: #eee
+        transform: translate(0, 0.5rem)
+        z-index: 0
