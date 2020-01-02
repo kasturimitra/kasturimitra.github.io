@@ -1,6 +1,6 @@
 # A Conversation of Intellect
 
-<div class="date">20th September, 2015</div>
+<div class="date">20th September 2015</div>
 
 “Have you ever thought what’s in those books?”
 
