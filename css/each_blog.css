@@ -1,0 +1,397 @@
+body {
+    margin: 0;
+    background-color:#0f222b;
+    text-align: left;
+    color:#fff;
+    font-family: 'Roboto', sans-serif;
+  
+  }
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    }
+  
+/* For header files */
+.header-container{
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size:120%;
+    width: 240px;
+    padding-bottom: 20px;
+}
+
+.stay-on{
+  position: fixed;
+  width: 240px; 
+}
+
+.side-by-side{
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  border-left: 2px solid white;
+}
+
+
+.left-item{
+    text-align: left;
+    font-size: 150%; 
+    color:#fff;   
+}
+
+.blog-container{
+    padding-top: 20px;
+    max-width: 900px;
+    padding-left: 10px;
+
+}
+
+.blog-block{
+    text-align: left;
+
+}
+.title{
+    font-size: 40px;
+    color: white;
+    transition: font-size 0.5s ease;
+    padding-left: 20px;
+    border-left: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.sub-title{
+  display: flex;
+  font-size: 25px;
+  color: white;
+  transition: font-size 0.5s ease;
+  padding-left: 20px;
+  border-left: 2px solid white;
+  padding-bottom: 10px;
+}
+
+.date{
+    font-size: 15px;
+    color: #19f6e8;
+    padding-left: 20px;
+    border-left: 2px solid white;
+}
+
+.subheading{
+    transition: opacity 0.5s ease;
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-left: 2px solid white;
+    font-size: 24px;
+    line-height: 130%;
+}
+
+
+.subsubheading{
+  transition: opacity 0.5s ease;
+  padding-left: 20px;
+  border-left: 0.5px solid white;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.section{
+    transition: opacity 0.5s ease;
+    padding-left: 20px;
+    border-left: 0.5px solid white;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.quote{
+    transition: opacity 0.5s ease;
+    padding-left: 40px;
+    padding-right: 100px;
+    /* border-left: 0.5px solid white; */
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: right;
+    font-style: italic;
+}
+
+.contents{
+  padding-top: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.contents-row{
+  padding-right: 60px;
+}
+
+.contents-item{
+  color: #19f6e8;
+  padding-bottom: 12px;
+  font-size: 13px;
+}
+
+
+.code{
+  background-color: #004545;
+  padding-left: 0;
+}
+
+a{
+  color: #19f6e8;
+}
+
+/* collapsible cards */
+
+.collapsible {
+  background-color: #004545;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.type{
+  background-color: red;
+}
+
+.active, .collapsible:hover {
+  background-color: #008080;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color: black;
+  background-color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* Links */
+.links{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 22px;
+  }
+
+  html { 
+    scroll-behavior: smooth; 
+    display: block;
+  } 
+
+@media screen and (max-width: 800px) {
+    .main-container{
+      flex-direction: column; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: -22px;
+    color: white;
+    background-color: teal;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #19f6e8;
+    font-size: 25px;
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: white;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background-color: teal;
+  }
+
+  .zoom {
+    color: white;
+    font-size: 25px;
+    padding: 25px;
+    position: absolute;
+    bottom: 0;
+    background-color: teal;
+  }
+
+  .slideshow-container:hover{
+        
+    /* transition-duration: 5s; */
+    transition-delay: 3.14s;
+    transition-duration: 1s;
+    margin-top: 100px;
+    transform: scale(1.25);
+       
+    }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(84, 109, 109);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: teal;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  .multiple-video{
+    display: flex;
+    flex-direction: row;
+  }
+
+/* simple button */
+
+.button-group{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: left;
+}
+
+.simple-button{
+  /* background-color: #4CAF50; Green */
+  border: 1px solid #19f6e8; /* Green */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  color: white;
+  padding: 15px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  transition: background-color 0.5s ease;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width:130px
+  
+}
+.simple-button:hover {
+  background-color: teal;
+  border: 1px solid teal;
+  opacity: 0.9;
+}
+
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @media screen and (max-width: 1000px) {
+
+    .quote{
+      padding-left: 40px;
+      padding-right: 10px;
+    }
+    .main-container{
+      width: 100%;
+    }
+    .section{
+      padding-right: 15px;
+    }
+    .contents{
+      flex-direction: column;
+    }
+    .button-group{
+      flex-direction: column;
+    }
+    .hidden{
+      display: none;
+    }
+    .side-by-side{
+      flex-direction: column;
+      padding-left: 0px;
+
+    }
+  }
+
+
+
+
+
+* { text-decoration: none;}
+

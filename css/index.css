@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    background-color:#230123;
+    text-align: left;
+    color:#fff;
+    font-family: 'Roboto', sans-serif;
+  
+  }
+
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+  .header-links{
+    margin-top: 20px;
+    width: 900px;
+    color: #f0aab9;
+    text-align: right;
+  }
+
+  .header #header-link{
+    color: #f0aab9;
+  }
+  
+  .main-container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .my-name{
+    text-align: center;
+    font-size:350%;
+    flex-grow: 1;
+    padding-top: 10%;
+  }
+
+  .my-info{
+    display: flex;
+    flex-direction: column;
+    font-size:120%;
+    flex-grow: 1;
+    padding-top: 1%;
+  }
+  
+
+  .my-profession{
+    text-align: center;
+    font-size:70%;
+    padding-top: 0%;
+  }
+  
+  .button-group{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 15%;
+    justify-content: center;
+  }
+  
+  /* Parent container */
+  .typewritten-button-info{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  /* Child text container */
+  .typewritten-button-text{
+    color: transparent;
+  }
+  
+  /* Hover on Parent Container */
+  .typewritten-button-info:hover{
+    cursor: pointer;
+   }
+  
+   .typewritten-button-info:hover .typewritten-button-text{
+    color: #f0aab9;
+    transition: 2s;
+    font-style: italic;
+   }
+   
+  
+  .bold-wrap{
+    color: #f0aab9;
+  
+  }
+  
+  .no-bold-wrap{
+    color: #f0aab9;
+  }
+  
+  
+  .svg-wrapper {
+    width: 320px; 
+  }
+  .shape {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 2px;
+    fill: transparent;
+    stroke: #f0aab9;
+    border-bottom: 100px solid black;
+    transition: stroke-width 2s, stroke-dashoffset 2s, stroke-dasharray 2s; 
+  }
+  .text {
+    font-size: 22px;
+    line-height: 32px;
+    color: white;
+    top: -48px;
+    position: relative;
+  }
+  .svg-wrapper:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer-item{
+    padding: 30px;
+    padding-bottom: 20px;
+  }
+
+  .footer-item:hover{
+    color: #f0aab9;
+  }
+
+  .links{
+    color: #f0aab9;
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .button-group{
+      flex-direction: column; /* The width is 100%, when the viewport is 800px or smaller */
+      align-items: center;
+      padding-top: 10%;
+      padding-bottom: 0%;
+    }
+    .header-links{
+      text-align: center;
+    }
+
+  }
+
+  
+  * { color:#fff; text-decoration: none;}
+  
+  
+  
+  
